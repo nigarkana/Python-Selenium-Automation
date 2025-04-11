@@ -14,5 +14,9 @@ for radioButton in radioButtons:
         radioButton.click()
         assert radioButton.is_selected()
         break
+#another way to handle radio button, if I know that the button will static
+rodioButton1 = driver.find_elements(By.CSS_SELECTOR,".radioButton")
+rodioButton1[1].click()
+
 
 time.sleep(4)
